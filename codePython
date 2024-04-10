@@ -38,8 +38,8 @@ with open("cookies.pkl", "wb") as file:
 
 while True:
     try:
-        notif_path = '//*[@id="pane-side"]/div[1]/div/div/div[7]/div/div/div/div[2]/div[2]/div[2]/span[1]/div/span'
-        notif = WebDriverWait(driver,60).until(EC.presence_of_element_located((By.XPATH, notif_path)))
+        notif_path = '.x1rg5ohu.x173ssrc.x1xaadd7.x682dto.x1e01kqd.x12j7j87.x9bpaai.x1pg5gke.x1s688f.xo5v014.x1u28eo4.x2b8uid.x16dsc37.x18ba5f9.x1sbl2l.xy9co9w.x5r174s.x7h3shv'
+        notif = WebDriverWait(driver,60).until(EC.presence_of_element_located((By.CSS_SELECTOR, notif_path)))
 
         notif.click()
         time.sleep(10)
@@ -49,7 +49,7 @@ while True:
         message_box.send_keys('Pesan kamu disini')
         message_box.send_keys(Keys.RETURN)
 
-        time.sleep(60)
+        time.sleep(30)
     except Exception as e:
         print(f"Terjadi kesalahan: {e}")
         time.sleep(60) 
